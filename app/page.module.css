@@ -20,14 +20,9 @@
 
 .main {
   display: flex;
-  flex: 1;
-  width: 100%;
-  max-width: 800px;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  align-items: center;
+  padding: 1rem;
 }
 
 .intro {
@@ -138,5 +133,42 @@ a.secondary {
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
     --button-secondary-border: #1a1a1a;
+  }
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  color: white;
+  height: 35px;
+  padding: 0 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  &:hover {
+    background-color: rgb(49, 49, 49);
+  }
+}
+.editButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: rgb(11, 176, 231);
+  color: white;
+  height: 35px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: rgb(72, 73, 73);
   }
 }
